@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+    const ws = new WebSocket("ws://localhost:8080/ws?deviceID=test123");
+
+    ws.onopen = () => {
+        console.log("✅ Connected");
+        ws.send("Hello from client!");
+    };
+
+    ws.onmessage = (msg) => {
+        console.log("📨 Echo:", msg.data);
+    };
+
+    ws.onclose = () => {
+        console.log("❌ Disconnected");
+    };
+</script>
+</body>
+</html>
