@@ -126,3 +126,15 @@ Now the device and server are best friends.
 
 ---
 
+
+# Phase 2: MultiClient Connection and Targetted Messages
+
+In phase 1 we can create multiple conn but there is no track of connection so we can not send target messages. In Phase 2 we weill send targetted messages by storing deviceId and conn obj.
+
+
+![MultiClient Connection](ws_diagrams/multiconnection.png)
+
+In Phase 2, each device establishes its own WebSocket connection to the server, forming independent duplex (two-way) channels. The server maintains a mapping between device IDs and their active WebSocket connections (using a map or a DB). This allows the server to send messages directly to a specific device by looking up its stored connection. Unlike Phase 1's echo-only behavior, this setup enables targeted communication — sending personalized messages to individual devices or broadcasting to a group, making it suitable for real-time device communication systems.
+
+-   We can broadcast the msg as well by looping over each device stored in our map.
+
