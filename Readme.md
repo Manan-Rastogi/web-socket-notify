@@ -1,9 +1,8 @@
 ## What is a WebSocket?
-```
 A WebSocket is a persistent, full-duplex connection between client and server over a single TCP connection — unlike HTTP which is request/response based.
-    ->   You send a message from client → server without making a new request.
-    ->   Server can push data to client at any time, without being asked.
-```
+-   You send a message from client → server without making a new request.
+-   Server can push data to client at any time, without being asked.
+
 
 ## How does it start? (The WebSocket handshake)
 The connection starts as a normal HTTP request:
