@@ -63,7 +63,7 @@ You echo the message type back to preserve its meaning.
 
 ## Basic WS Flow
 
-![Basic WS](image.png)
+![Basic WS](ws_diagrams/basic_conn.png)
 
 Sure! Here's a simple **story-style explanation** for Steps 1–5 in your WebSocket diagram — like a scene from a tech movie:
 
