@@ -1,3 +1,6 @@
+## Code is Done in Phase by Phase Manner. Check Branches for different phases code...
+
+# Phase 1
 ## What is a WebSocket?
 A WebSocket is a persistent, full-duplex connection between client and server over a single TCP connection — unlike HTTP which is request/response based.
 -   You send a message from client → server without making a new request.
