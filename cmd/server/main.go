@@ -12,6 +12,7 @@ import (
 
 func main() {
 	http.HandleFunc("/ws", websocket.HandleWebSocket)
+	http.HandleFunc("/push", websocket.PushHandler)
 
 	fmt.Println("🔌 WebSocket server running on http://localhost:8080/ws")
 	err := http.ListenAndServe(":8080", nil)
